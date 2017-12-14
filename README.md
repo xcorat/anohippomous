@@ -12,12 +12,14 @@ anonbot is a Slack [slash command](https://api.slack.com/slash-commands) and [in
     - Set the command to be `/anon` or whatever you prefer
     - Set the URL to your new Heroku domain and append `/webhook` (e.g. `https://wailing-winds-0421.herokuapp.com/webhook`)
     - Add the slash command token to Heroku: `heroku config:set SLACK_OUTGOING_WEBHOOK_TOKEN=<token>`
+    - Make sure the icon is correct on `main.py` or add if missing.
 - Create an [incoming webhook](https://api.slack.com/incoming-webhooks)
     - Add the incoming webhook URL to Heroku: `heroku config:set SLACK_INCOMING_WEBHOOK_URL=<webhook URL>`
 
 ## Copyright
 
 Copyright &copy; Brian Donohue
+Edited by: Sachi <xcorat@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

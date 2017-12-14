@@ -14,8 +14,8 @@ def webhook():
     token = request.form.get('token')
     if not SLACK_OUTGOING_WEBHOOK_TOKEN or token == SLACK_OUTGOING_WEBHOOK_TOKEN:
         params = {
-                'username': 'anonbot',
-                'icon_emoji': ':ghost:',
+                'username': 'anohippomous',
+                'icon_emoji': ':anohippomous:',
                 'text': request.form.get('text'),
                 'channel': '#%s' % request.form.get('channel_name')
         }
